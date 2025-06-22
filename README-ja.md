@@ -43,12 +43,23 @@ git clone https://github.com/yourusername/StudyTracker.git
 cd StudyTracker
 ```
 
-2. リポジトリのクローン
+2. 仮想環境の作成とアクティベート (Mac)
 ```bash
-pip install matplotlib pandas numpy tkinter
+python3 -m venv .venv
+source .venv/bin/activate
+```
+(Windows)
+```bash
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
-3. リポジトリのクローン
+3. 依存関係のインストール
+```bash
+pip install -r requirements.txt
+```
+
+4. アプリケーションの起動
 ```bash
 python main.py
 ```

@@ -36,18 +36,30 @@ StudyTracker/
 
 ## Getting Started
 
-1. Clone the repository
+1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/StudyTracker.git
 cd StudyTracker
 ```
 
-2. Install required packages
+2. Create and activate a virtual environment:
+**Mac:**
 ```bash
-pip install matplotlib pandas numpy tkinter
+python3 -m venv .venv
+source .venv/bin/activate
+```
+**Windows:**
+```bash
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
-3. Run the application
+3. Install required packages
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the application
 ```bash
 python main.py
 ```
